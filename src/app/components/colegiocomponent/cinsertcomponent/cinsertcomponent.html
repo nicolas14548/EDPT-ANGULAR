@@ -1,0 +1,27 @@
+<div class="container">
+  <div>
+    <h2>Registro de Colegio</h2>
+  </div>
+  <div>
+    <form [formGroup]="colegioForm" (ngSubmit)="insertarColegio()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre del Colegio</mat-label>
+        <input matInput placeholder="Mi Colegio" formControlName="nombre">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Dirección</mat-label>
+        <input matInput formControlName="direccion">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Distrito</mat-label>
+        <input matInput formControlName="distrito">
+      </mat-form-field>
+      <br>
+
+      <button matButton type="submit">Registrar</button>
+
+    </form>
+  </div>
+</div>
